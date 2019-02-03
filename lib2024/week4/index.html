@@ -1,0 +1,151 @@
+<!-- doctype html tag tells the browser that this HTML document is HTML5 -->
+<!-- this is called doctype declaration -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- this is the tag that tells the browser which characterset you are using -->
+	<meta charset="utf-8">
+	<!-- meta tags are important to determine the SEO of a webpage -->
+	<meta title="description" content="this is an HTML document containing HTML tags">
+	<!-- Meta keywords are the SEO specific tag used to tell the site crawlers what keywords are in your site -->
+	<meta name="keywords" content="HTML5, HTML, Tags, Basic HTML, Standard Tags">
+	<!-- meta robots tag can have a combination of the following values:
+	1) index - index this page in the search repository
+	2) noindex - Do Not
+	3) follow - tells the search engine to follow changes made to this page
+	4) nofollow - Do Not  -->
+	<meta name="robots" content="noindex, nofollow">
+	<meta>
+
+</head>
+<body>
+
+	<!-- header is the semantic tag that tells the browswer that the content of this tag is the most important and must be rendered with the highest priority -->
+	<!-- all of the content in the header tag is called heading content -->
+	<!-- header is one of the many semantic tags introduced in HTML5 -->
+	<header>
+		<!-- heading tag can have h1 to h6 tags, h1 being most important and h6 being least -->
+		<h1>week 4 - basics of HTML</h1>
+
+		<!-- nav tag is used to create navigation for a web page -->
+		<!-- there can be more than one nav tag for a document -->
+		<!-- nav is just a container and not an actual navigation -->
+		<nav>
+
+			<!-- ul is the child of nav and is used to create the navigation links listed -->
+			<ul>
+				<!-- li tags are used to create navigation list elements -->
+				<li>
+					<!-- a tag is used to create links in an HTML document -->
+					<!-- a tag is the only tag that can do this -->
+					<a href="https://algonquincollege.com">Link 1 </a>
+					<!-- href is the attribute of a tag which tels the browser where to link this tag to -->
+				</li>
+				<li>
+					<!-- Title tag  -->
+					<a href="https://google.com" title= "Google">link 2</a>
+				</li>
+					<!-- target attribute in an anchor tab is used to tell the browser how to handle opening that link -->
+					<!-- target="_blank" tells the browser to open this link in a new window -->
+				<li>
+					<a href="https://lynda.com" title= "LYnda Website" target="_blank">link 3</a>
+				</li>
+
+			</ul>
+
+		</nav>
+
+	</header>
+	<main>
+		
+			<!-- Main tag is a semantic tag used to specify the main body of the HTML document -->
+			<!--  -->
+			<p>Paragraph in the main tag</p>
+			<!-- div tag is the most generic content holder used in HTML -->
+			<!-- it is used to create sections, containers, and text itself -->
+			<!-- div tag does not follow semantic rendering, therefore it can be a parent or child of any tag except inline tags and p tags -->
+			<div>
+				Content in a div tag
+			</div>
+	</main>
+
+	<div>div outside main</div>
+		<!-- section tag is HTML5 semantic tag used to specify various sections in an HTML body -->
+		<!-- section tag, similar to header and nav tag is just a container, and its contents are called section contents -->
+	<section>
+		<!-- article tags are used to create the content/text for HTML documents -->
+		<!-- note that article tags, and any other semantic tags, are known as structural elements -->
+		<article>
+			
+			<h2>main text</h2>
+			<p> paragraph inside an article</p><p>paragraph 2</p>
+			<p>
+				<!-- span is an inline element -->
+				<!-- inline elements render according to their content -->
+				<!-- the space taken by an inline element is decided by its content and not the tag properties -->
+				<span></span>
+				<span>span2</span>
+				<span></span>
+				<span>span4</span>
+			</p>
+				<!-- the following are text decoration tags and are inline elemtents. b is used to make text bold, i is to italicize, and u is to underline -->
+			<p>this text is <b>bold</b></p>
+			<p>this text is <i>italicized</i></p>
+			<p>this text is <u>underlined</u></p>
+
+				<!-- how about all three? -->
+			<p>
+				<!-- Child elements always inherit the properties of the parent element -->
+				<b>
+					<i>
+						<u>
+							Combination
+						</u>
+					</i>
+				</b>
+			</p>
+
+		</article>
+		<aside>
+			<h3>Extra Links</h3>
+			<nav>
+				<ul>
+					<li>
+						<a href="https://sublink">Sub Element 1 </a>
+					</li>
+					<li>
+						<ul>
+							<li>Sub Sub List 1</li>
+							<li>Sub Sub list 2</li>
+							<!-- ol being used as sub sub sub list -->
+							<ol>
+								<li>sub sub sub 1</li>
+								<li>sub sub sub 2</li>
+							</ol>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+
+		<footer>
+			<!-- footer is also a structural tag used to define the footer of HTML documents -->
+			<!-- footer can also contain sections -->
+			<p>This is a footer</p>
+
+			<section>
+				<p>section 1</p>
+			</section>
+			<section>
+				<p>section 2</p>
+			</section>
+			<section>
+				<p>section 3</p>
+			</section>
+		</footer>
+
+	</section>
+
+</body>
+</html>
