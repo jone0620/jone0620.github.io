@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Forms</title>
+</head>
+<body>
+	<div id="wrapper" class="wrapper">
+		<section id="html-forms" class="main-section">
+			<form action="somepage.php" method="get">
+				<!-- form requires two attributes for it to be valid - "action" is the page where the data goes when the form is submitted."method" is how the data reaches its destination. -->
+				<!-- two methods available - "get" (default): sends information via query strings and appends it to the end of address.
+				 "post": sends the data in an encrypted package  -->
+				 <div id="first-name-container" class="form-element">
+				 <label for="firstname">First name </label>
+				 <!-- an input element must be accompanied by a label. -->
+				 <!-- a label has an attribute "for" which is used to connect it with the input element it is labelling. -->
+				 <!-- value of for attribute is same as the value for name attribute of the input element. -->
+
+				 <!-- Note: as a best practice use the same value for ID as name,to make it easier for styling and javascript. -->
+
+					 <input type="text" name="firstname" id="firstname">
+					 <!-- input automatically gives fields for a "type" and a "name". form input elements must have both. -->
+					 <!-- "type": determines the input type - e.g. text, password, number -->
+					 <!-- "name": unique identification for this input when data is submitted to the server mentioned in action attribute of the form. -->
+				 	<!-- as a best practice, use the same value for ID as for name to make it easier to recognize for styling and Javascript. -->
+				 </div>
+				 <div id="last-name-container" class="form-element">
+				 	<label for="lastname">Last name</label>
+					 <input type="text" name="lastname" id="lastname" placeholder="fuck yeah dude">
+					 <!-- other attributes of input elements are:
+					 - place holder: the place holder attribute is the pseudo text shown to the user before they start inputting - as soon as the user starts typing, the text disappears. -->
+				</div>
+
+				<div id="email-container" class="form-element">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" value="example@gmail.com">
+					<!-- value attribute saves the input and submits it to the browser -->
+					<!-- value attribute is permanent and would NOT disappear when the user starts inputting -->
+					<!-- HTML5 validates input given in an input field. It must contain an @ symbol to be valid. -->
+				</div>
+
+				<div id="pass-container" class="form-element">
+					<label for="pass">Password</label>
+					<input type="password" name="pass" id="pass">
+					<!-- input type="password" is used to create password inputs where the value written in this input is hidden. Instead of showing up as text, the browser displays those dots. -->
+
+				</div>
+
+				<div id="sum-containter" class="form-element">
+					<label for="summary">Summary</label>
+					<textarea name="summary" id="summary" placeholder="enter summary here">This is the value of the text area</textarea>
+					<!-- a text area lets you submit information that's more than one line. -->
+					<!-- the information submitted will correspond in the server -->
+					<!-- text area preserves  -->
+
+				</div>
+
+				<div id="colour-drop-container" class="form-element">
+					<select name="fav-colour" id="fav-colour">
+						<label for="fav-colour">Favourite Colour:</label>
+						<option value="red">Red</option>
+						<option value="green" selected>Green</option>
+						<option value="blue">Blue</option>
+
+						<!-- select element is used to create dropdowns in HTML -->
+						<!-- select comes paired with <options> -->
+							<!-- "selected" is used to make that element the default-->
+
+					</select>
+				</div>
+
+				<div id="places-container" class="form-element">
+					<h3>Places to Visit</h3>
+					<!-- input type=checkbox is used to create checkboxes -->
+					<!-- the checkboxes of the same group share the same  -->
+					<label for="germany">Germany</label>
+					<input type="checkbox" name="germany" id="germany" value="germany"><br>
+
+					<label for="paris">Paris</label>
+					<input type="checkbox" name="paris" id="paris" value="paris"><br>
+
+					<label for="australia">Australia</label>
+					<input type="checkbox" name="australia" id="australia" value="australia"><br>
+
+					<label for="iceland">
+						<input type="checkbox" name="iceland" id="iceland" value="iceland">
+						Iceland
+					</label><br>
+				</div>
+
+				<div id="radio-container" class="form-element">
+					
+					<p>Do you like forms?</p>
+					<label for="yes">
+						Yes
+						<input type="radio" name="like-form" id="yes" value="yes" checked>
+
+					</label>
+					<label for="no">
+						No
+						<input type="radio" name="like-form" id="no" value="no">
+					</label>
+					<!-- inputs like radio are singular-value checkboxes, which means the user can only select one value. radio elements belonging to the same group share their names. -->
+					<!-- radio checkboxes cannot be unselected. -->
+					<!-- checked attribute for radio makes it selected by default. -->
+
+					<fieldset>
+						<!-- fieldset creates a segment inside the form -->
+						<!-- it is used to create groups of input types and have them displayed in a box -->
+						<!-- the fieldset will be read by SEO crawlers -->
+						<legend>Select our free services:</legend>
+						<!-- legend is the title of fieldset -->
+						<div>
+							<label for="spam">
+								Spam me forever
+								<input type="checkbox" name="spam" id="spam">
+							</label>
+							<label>
+								Sell my information
+								<input type="checkbox" name="sell" id="sell">
+							</label>
+						</div>
+					</fieldset>
+
+				</div>
+
+				<button type="submit">Submit</button>
+				<!-- <button type="submit"> creates a button that submits the form and HTML5 elements get automatically validated by the browser. -->
+
+			</form>
+		</section>
+	</div>
+
+</body>
+</html>
