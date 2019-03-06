@@ -1,0 +1,14 @@
+/*CSS documents are used to add external styles to the HTML document*/
+/*the extension of this file must be .css*/
+
+
+header nav li a {
+	/*RGB is used to define colour using red green blue values.
+	each value ranges from 0 to 255.*/
+	/*in this CSS block we are targetting the <a> tags present in <li> which must be present in <nav>, which must be present in <header>.*/
+	color: rgb(0,0,255);
+}
+
+p {
+	color: blue
+}
