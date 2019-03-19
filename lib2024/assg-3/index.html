@@ -5,20 +5,133 @@ First and Last name (text,) Email (email), Password, Introduction/Summary (text 
 <!-- Include Submit and Reset buttons along with their required attributes.. At least 5 fields must be required. include "name", "id", and "label". include proper IDs and classes. use placeholders wherever applicable. Radio buttons and checkboxes must have proper values. -->
 <html>
 <head>
+	<style type="text/css">
+		h2 {color: powderblue}
+		h3 {color: darkblue}
+		label {color: blue;}
+	</style>
 	<title>Assignment 3 - Registration Form</title>
-	<h1>Assignment 3 - Registration Form</h1>
+	<h1 style="color: blue">Assignment 3 - Registration Form</h1>
 </head>
 <body>
 	<h2>Please complete registration to continue.</h2>
 	<form>
+		<h3>Personal information (Required:)</h3>
 		<label for="firstName">First Name:</label>
-		<input type="text" name="firstName" class="input" id="firstName">
-		<br>
-		<label for="lastName">Last Name: </label>
-		<input type="text" name="lastName" class="input" id="lastName">
+		<input type="text" name="firstName" class="input" id="firstName" placeholder="Shelby" required>
 		<br>
 
-		<input type="Submit" name="Submit" class="input" id="Submit" value="Submit">
+		<label for="lastName">Last Name: </label>
+		<input type="text" name="lastName" class="input" id="lastName" placeholder="Schmidt" required>
+		<br>
+
+		<label for="birthDate">Birth Date:</label>
+		<input type="date" name="birthDate" class="input" id="birthDate" required>
+		<br>
+
+		<label for="emailAddress">Email Address:</label>
+		<input type="email" name="emailAddress" class="input" id="emailAddress" placeholder="ShelbySchmidt@email.yup" required>
+		<br>
+
+		<label for="password">Password:</label>
+		<input type="Password" name="password" class="input" id="password" required>
+		<br>
+		<br>
+
+		<h3>Additional information (Not required:)</h3>
+
+		<label for="introduction">Tell us about yourself:<br></label>
+		<textarea rows="4" cols="40" name="introduction" placeholder="Your introduction" class="input" id="introduction"></textarea>
+		<br>
+
+		<label for="mobileNumber">Mobile Number:</label>
+		<input type="number" name="mobileNumber" class="input" id="mobileNumber" placeholder="555-123-4567">
+		<br>
+
+		<label for="gender">Gender:</label>
+		<br>
+		<input type="radio" name="gender" class="input" value="male">Male<br>
+		<input type="radio" name="gender" class="input" value="female">Female<br>
+		<input type="radio" name="gender" class="input" value="other">Other<br>
+		<br>
+
+		<label for="address">Address:</label>
+		<input type="text" name="address" class="input" placeholder="111 yeah street">
+		<br>
+
+		<label for="city">City:</label>
+		<input type="text" name="city" class="input" placeholder="Citytown">
+		<br>
+
+		<label for="province">Province or Territory:</label>
+		<input list="province" name="province" class="input">
+		<datalist id="province">
+			<option value="Ontario">
+			<option value="Quebec">
+			<option value="Nova Scotia">
+			<option value="New Brunswick">
+			<option value="Manitoba">
+			<option value="British Columbia">
+			<option value="Prince Edward Island">
+			<option value="Saskatchewan">
+			<option value="Alberta">
+			<option value="Newfoundland">
+			<option value="Northwest Territories">
+			<option value="Yukon">
+			<option value="Nunavut">
+			<option value="Not Applicable">
+		</datalist>
+
+		<br>
+
+		<label for="country">Country:</label>
+		<input list="country" name="country" class="input">
+		<datalist id="country">
+			<option value="Canada">
+			<option value="United States">
+			<option value="Australia">
+			<option value="United Kingdom">
+			<option value="France">
+			<option value="Germany">
+			<option value="Denmark">
+			<option value="Haiti">
+			<option value="Hungary">
+			<option value="Honduras">
+			<option value="Afghanistan">
+			<option value="Argentina">
+			<option value="Belgium">
+			<option value="Bulgaria">
+			<option value="Burma">
+		</datalist>
+		<br>
+
+		<label for="postalCode">Postal Code:</label>
+		<input type="text" name="postalCode" class="input" id="postalCode" placeholder="A1A A1A">
+		<br>
+
+		<label for="hobbies">Hobbies:</label><br>
+		<input type="checkbox" name="hobbies" class="input" id="hobbies1" value="Art">Art<br>
+		<input type="checkbox" name="hobbies" class="input" id="hobbies2" value="Coding">Coding<br>
+		<input type="checkbox" name="hobbies" class="input" id="hobbies3" value="Video Games">Video Games<br>
+		<input type="checkbox" name="hobbies" class="input" id="hobbies4" value="Reading">Reading<br>
+		<input type="checkbox" name="hobbies" class="input" id="hobbies5" value="Movies">Movies<br>
+		<input type="checkbox" name="hobbies" class="input" id="hobbies6" value="Stamp Collecting">Stamp Collecting<br>
+		<input type="checkbox" name="hobbies" class="input" id="hobbies7" value="Tabletop Games">Tabletop Games<br>
+		<input type="checkbox" name="hobbies" class="input" id="hobbies8" value="Fencing">Fencing<br>
+		<input type="checkbox" name="hobbies" class="input" id="hobbies9" value="Carpentry">Carpentry<br>
+		<input type="checkbox" name="hobbies" class="input" id="hobbies10" value="Suffering">Suffering<br>
+
+		<br>
+
+		<label for="website">Website:</label>
+		<input type="url" name="website" class="input" id="website" placeholder="your website">
+		<br>
+
+
+		<br>
+		<input type="reset" name="reset" class="input" id="reset" value="Reset">
+		<br>
+		<input type="submit" name="submit" class="input" id="submit" value="Submit">
 	</form>
 
 </body>
