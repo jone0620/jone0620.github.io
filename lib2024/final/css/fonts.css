@@ -1,0 +1,8 @@
+@font-face{
+	font-family: eurocine;
+	src: url(eurocine-regular-webfont.woff);
+}
+
+h1 {
+	font-family: eurocine;
+}

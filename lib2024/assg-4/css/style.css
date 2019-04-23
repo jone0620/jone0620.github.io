@@ -1,0 +1,113 @@
+
+		header { 
+			background-color: lightgreen;
+	
+		}
+
+		body {
+				background-color: white;
+			}
+
+		footer {
+				
+				position: relative;
+				height: 60px;
+				background-color: lightgreen;
+		}
+
+
+		h1 {
+				display: inline;
+				clear: left;
+				position: relative;
+				left: 160px;
+				font-family: Helvetica, Sans-serif;
+				z-index: 1;
+		
+			}
+		#logo {
+				vertical-align: middle;
+		}
+
+		h2 {
+			font-family: Helvetica, Sans-serif;
+			text-align: left;
+		}
+
+		h3 {font-family: sans-serif;}
+
+		article {
+			float: left;
+			clear: right;
+			width: 60%;
+
+			
+		}
+
+		.sidebar {
+
+			float: right;
+  			width: 35%; 
+  			position: relative;
+  			margin-right: 10px;
+  			margin-top: 20px;
+  			padding-bottom: 70px;
+			}
+
+		.button {
+
+ 			font: bold 25px Arial;
+ 		 	background-color: aqua;
+  			border: none;
+  			border-radius: 10px;
+ 			color: black;
+  			padding: 15px 32px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 16px;
+  			
+
+		}
+
+		.links {
+			vertical-align: middle;
+		}
+
+		figure {
+			display: inline-block;
+			margin-top: 5px;
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+
+		figure img {
+			vertical-align: top;
+		}
+
+		figure figcaption {
+			text-align: center;
+		}
+
+		#facebook {
+			
+			float: right;
+			right: 0;
+			padding: 5px;
+			}
+
+		#youtube{
+			
+			float: right;
+			right: 0;
+			padding: 5px;
+			}
+
+		#twitter{
+			
+			float: right;
+			right: 0;
+			padding: 5px;
+			}
+
